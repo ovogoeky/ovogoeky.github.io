@@ -1,81 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./style/css/styles.css">
-        <style>
-            /* Hier können Sie allgemeine CSS-Stile hinzufügen */
-            body {
-                font-family: Georgia; /* Hier wird Helvetica als erste Wahl angegeben, gefolgt von Arial und sans-serif als Fallback. */
-                background-color: #000;
-                color: #fff;
-                margin: 0;
-                padding: 0;
-            }
+<head>
+    <link rel="stylesheet" href="./style/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400&display=swap">
+    <style>
+        /* Hier können Sie allgemeine CSS-Stile hinzufügen */
+        body {
+            font-family: 'Helvetica', Arial, sans-serif; /* Hier wird 'Helvetica' als erste Wahl angegeben, gefolgt von Arial und sans-serif als Fallback. */
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
 
-            .container {
-                max-width: 800px;
-                margin: 20px auto;
-                padding: 20px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-            h1 {
-                font-size: 24px;
-            }
+        h1 {
+            font-size: 24px;
+        }
 
-            .gif_container {
-                margin-top: 20px;
-                text-align: center;
-            }
+        .gif_container {
+            margin-top: 20px;
+            text-align: center;
+        }
 
-            .buttons {
-                margin-top: 20px;
-                text-align: center;
-            }
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
 
-            .btn {
-                padding: 10px 20px;
-                font-size: 16px;
-                cursor: pointer;
-            }
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-            #noButton {
-                position: relative;
-            }
-        </style>
-    </head> 
-    <body>
-        <div class="container">
-            <div>
-                <h1 class="header_text">
-                    Fr never thought I would feel this way for someone. <br>
-                    Then, you entered my life. <br>
-                    You get me in a way I never thought possible. You are everything I've ever wanted. <br>
-                    Insane. Insane. Insane. Would love to strengthen our bond and create more memories together in the future. <br>
-                    Maybe watch Oppenheimer. <br>
-                    <br>
-                    Will you be my girlfriend?
-                </h1>
-            </div>
-            <div class="gif_container">
-                <img src="https://media.giphy.com/media/LnKonfpQ44fNvuGLkA/giphy.gif" alt="Cute animated illustration">
-            </div>
-            <div class="buttons">
-                <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
-                <script>
-                    function nextPage() {
-                        window.location.href = "yes.html";
-                    }
-                    
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
-                </script> 
-            </div>
+        #noButton {
+            position: relative;
+        }
+    </style>
+</head> 
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">
+                Fr never thought I would feel this way for someone. <br>
+                Then, you entered my life. <br>
+                You get me in a way I never thought possible. You are everything I've ever wanted. <br>
+                Insane. Insane. Insane. Would love to strengthen our bond and create more memories together in the future. Maybe watch Oppenheimer. <br>
+                Will you be my girlfriend?
+            </h1>
         </div>
-    </body> 
+        <div class="gif_container">
+            <img src="https://media.giphy.com/media/LnKonfpQ44fNvuGLkA/giphy.gif" alt="Cute animated illustration">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "yes.html";
+                }
+                
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script> 
+        </div>
+    </div>
+</body>
 </html>
