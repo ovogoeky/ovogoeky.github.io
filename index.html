@@ -20,9 +20,13 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .header_text {
-            color: #007bff;
+        h1 {
+            font-family: Arial, sans-serif;
             font-size: 24px;
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         .gif_container {
@@ -49,7 +53,6 @@
 <body>
     <div class="container">
         <div>
-            <h1 class="header_text">Fr never thought I would feel this way for someone.</h1>
             <h1>Fr never thought I would feel this way for someone.</h1>
             <h1>Then, you entered my life.</h1>
             <h1>Babe you get me in a way I never thought possible. You are everything I've ever wanted.</h1>
@@ -58,7 +61,7 @@
             <h1>Will you be my girlfriend?</h1>
         </div>
         <div class="gif_container">
-            <img src="" alt="Cute animated illustration">
+            <img src="https://giphy.com/stickers/Spacecrafting-heart-white-outline-UjdYsOVZP0thqDddtV" alt="Cute animated illustration">
         </div>
         <div class="buttons">
             <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
@@ -72,11 +75,4 @@
         }
 
         function moveButton() {
-            var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
-            var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
-            document.getElementById('noButton').style.left = `${x}px`;
-            document.getElementById('noButton').style.top = `${y}px`;
-        }
-    </script>
-</body>
-</html>
+          
