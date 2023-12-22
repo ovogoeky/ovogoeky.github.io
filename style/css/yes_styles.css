@@ -21,7 +21,7 @@ body {
 }
 
 .header_text {
-    font-family: 'Nunito';
+    font-family: 'Helvetica';
     font-size: 50px;
     font-weight: bold;
     color: white;
@@ -31,7 +31,7 @@ body {
 }
 
 .text {
-    font-family: 'Nunito';
+    font-family: 'Helvetica';
     font-size: 25px;
     font-weight: bold;
     color: white;
