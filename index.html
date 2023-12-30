@@ -44,9 +44,13 @@
             position: relative;
         }
 
-        img {
-            max-width: 20%; /* Das Bild wird nie breiter als der Container sein */
-            height: 20%;    /* Das Bild behält sein Seitenverhältnis bei */
+         .positioned-image {
+            position: absolute;
+            top: 100px; /* Ändere dies nach Bedarf */
+            left: 200px; /* Ändere dies nach Bedarf */
+            width: 200px; /* Ändere dies nach Bedarf */
+            height: auto; /* Behält das Seitenverhältnis bei */
+            border: 1px solid #fff; /* Optional: Rahmen um das Bild */
         }
         
     </style>
@@ -54,8 +58,6 @@
 <body>
     <div class="container">
         <div>
-
-            <img src="style/images/A1DF605C-4193-4191-A72A-A751D61A3839.JPG" alt="Bildbeschreibung">
             
             <h1 class="header_text">
                 Nisa <br>
@@ -78,6 +80,9 @@
                     document.getElementById('noButton').style.left = `${x}px`;
                     document.getElementById('noButton').style.top = `${y}px`;
                 }
+
+                 <img src="style/images/A1DF605C-4193-4191-A72A-A751D61A3839.JPG" alt="Bildbeschreibung" class="positioned-image">
+                
             </script> 
         </div>
     </div>
