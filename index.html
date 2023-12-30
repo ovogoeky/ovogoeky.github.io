@@ -6,11 +6,21 @@
     <style>
         /* Hier können Sie allgemeine CSS-Stile hinzufügen */
         body {
-            font-family: 'Helvetica', Arial, sans-serif; /* Hier wird 'Helvetica' als erste Wahl angegeben, gefolgt von Arial und sans-serif als Fallback. */
+            font-family: 'Helvetica', Arial, sans-serif;
             background-color: #000;
             color: #fff;
             margin: 0;
             padding: 0;
+        }
+
+        /* Füge hier deine spezifischen Stile für die Bilder hinzu */
+        .positioned-image {
+            position: absolute;
+            top: 100px; /* Ändere dies nach Bedarf */
+            left: 200px; /* Ändere dies nach Bedarf */
+            width: 200px; /* Ändere dies nach Bedarf */
+            height: auto; /* Behält das Seitenverhältnis bei */
+            border: 1px solid #fff; /* Optional: Rahmen um das Bild */
         }
 
         .container {
@@ -18,6 +28,7 @@
             margin: 20px auto;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative; /* Damit positionierte Elemente relativ zum Container sind */
         }
 
         h1 {
@@ -43,27 +54,16 @@
         #noButton {
             position: relative;
         }
-
-         .positioned-image {
-            position: absolute;
-            top: 100px; /* Ändere dies nach Bedarf */
-            left: 200px; /* Ändere dies nach Bedarf */
-            width: 200px; /* Ändere dies nach Bedarf */
-            height: auto; /* Behält das Seitenverhältnis bei */
-            border: 1px solid #fff; /* Optional: Rahmen um das Bild */
-        }
-        
     </style>
 </head> 
 <body>
     <div class="container">
         <div>
-            
-             <img src="style/images/A1DF605C-4193-4191-A72A-A751D61A3839.JPG" alt="Bildbeschreibung" class="positioned-image">
+            <!-- Hier füge das img-Element mit dem Bildpfad und der spezifischen Klasse ein -->
+            <img src="style/images/A1DF605C-4193-4191-A72A-A751D61A3839.JPG" alt="Bildbeschreibung" class="positioned-image">
             
             <h1 class="header_text">
-                Nisa <br>
-
+                Nisa <br> <br>
                 Will you be my girlfriend?
             </h1>
         </div>
@@ -82,9 +82,6 @@
                     document.getElementById('noButton').style.left = `${x}px`;
                     document.getElementById('noButton').style.top = `${y}px`;
                 }
-
-                
-                
             </script> 
         </div>
     </div>
