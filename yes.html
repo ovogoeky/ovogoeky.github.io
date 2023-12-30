@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./style/css/yes_styles.css">
-        
-    </head> 
-    <body>
-        <div class="container">
-            <div >
-                <h1 class = "header_text">Insane </h1>
-            </div>
-            <div class="gif_container">
-                <img src="./style/images/NGK.gif">
-            </div>
-            <p class = "text"> Open your surprise</p>
+<head>
+    <link rel="stylesheet" href="./style/css/yes_styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Klärt das Float-Problem für den Container */
+        }
+
+        .header_text {
+            text-align: center;
+        }
+
+        .gif_container {
+            overflow: hidden; /* Klärt das Float-Problem für den Container */
+        }
+
+        img {
+            max-width: 100%; /* Das Bild wird nie breiter als sein Container */
+            height: auto; /* Behält das Seitenverhältnis bei */
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        /* Hier werden die Bilder links und rechts gefloatet */
+        .left-image {
+            float: left;
+            margin-right: 10px; /* Ändere dies nach Bedarf, um Abstand zwischen den Bildern zu steuern */
+        }
+
+        .right-image {
+            float: right;
+            margin-left: 10px; /* Ändere dies nach Bedarf, um Abstand zwischen den Bildern zu steuern */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <h1 class="header_text">Insane </h1>
         </div>
-       
-    </body> 
+        <div class="gif_container">
+            <!-- Linkes Bild -->
+            <img src="style/images/Ohne Titel.png" alt="Left Image" class="left-image">
+            <!-- Rechtes Bild -->
+            <img src="style/images/DN.gif" alt="Right Image" class="right-image">
+        </div>
+        <p class="text">Open your surprise</p>
+    </div>
+
+</body>
 </html>
